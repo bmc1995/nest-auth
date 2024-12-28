@@ -5,7 +5,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
-import { DocumentModule } from './modules/document/document.module';
 import { DataSource } from 'typeorm';
 import { typeormOpts } from './database/database.providers';
 
