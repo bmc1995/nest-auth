@@ -7,13 +7,14 @@ import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
 import { DataSource } from 'typeorm';
 import { typeormOpts } from './database/database.providers';
+import { TokensModule } from './modules/tokens/tokens.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRootAsync(typeormOpts),
     AuthModule,
     UsersModule,
-    DocumentModule,
+    TokensModule,
   ],
   controllers: [AppController],
   providers: [AppService],
